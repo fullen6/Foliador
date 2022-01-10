@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="collapse" stylesheets="@../css/collapse.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" styleClass="collapse-child" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+             <Label text="Tipo de numero" VBox.vgrow="ALWAYS">
+                 <font>
+                     <Font name="System Bold" size="15.0" />
+                 </font>
+             </Label>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <RadioButton fx:id="radioArabico" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true" text="Arabico 1,2,3" HBox.hgrow="ALWAYS">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tipoNumero" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radioRomano" mnemonicParsing="false" text="Romano I;II;III" toggleGroup="$tipoNumero" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <VBox spacing="10.0">
+               <children>
+                  <Label text="Cantidad maxima de digitos" />
+                  <Spinner fx:id="spiRelleno" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                  <Label text="Relleno a la izquierda">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtRellenoIzquierda" />
+                  <Label text="Texto Adicional" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="TOP_CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <TextField fx:id="txtAdicionalIzquierda" alignment="TOP_RIGHT" HBox.hgrow="ALWAYS" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="100.0" text="99" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="txtAdicionalDerecha" alignment="TOP_LEFT" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

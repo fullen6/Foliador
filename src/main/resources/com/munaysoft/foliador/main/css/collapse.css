@@ -1,0 +1,39 @@
+.collapse{
+    -fx-max-width: 360;
+    -fx-padding: 40,40,40,40;
+}
+VBox{
+    -fx-background-color: white;
+}
+.collapse-child{
+    -fx-padding: 20,20,20,20;
+    -fx-max-width: 276;
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-spacing: 30;
+}
+
+.label{
+    -fx-background-color: white;
+    -fx-font-size: 15px;
+}
+
+.spinner{
+    -fx-border-color: #d1d3e2;
+}
+.spinner > .increment-arrow-button{
+    -fx-background-color: white;
+}
+
+.spinner > .decrement-arrow-button{
+    -fx-background-color: white;
+}
+
+.spinner > .text-field{
+    -fx-padding: 6;
+}
+
+.combo-box{
+    -fx-background-color: white;
+    -fx-border-color: #d1d3e2;
+}

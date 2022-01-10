@@ -1,0 +1,83 @@
+.custom-VBox{
+    -fx-background-color: linear-gradient(to bottom,#4e73df, #224abe);
+}
+.brand{
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-font-weight: 800;
+}
+
+.accordion {
+    -fx-background-color: linear-gradient(to bottom,#4e73df, #224abe);
+}
+
+.scroll-pane .viewport{
+    -fx-background-color: linear-gradient(to bottom,#4e73df, #224abe);
+}
+.titled-pane {
+    -fx-text-fill: rgba(255,255,255,.8);
+    -fx-arrow-side: right;
+
+}
+
+.title{
+    -fx-fill: rgba(255,255,255,.8);
+}
+
+.titled-pane:focused {
+    -fx-color: -fx-base;
+    -fx-text-fill: white;
+}
+.titled-pane > .title {
+    -fx-background-color: #4e73df;
+    -fx-padding: 25px;
+    -fx-text-fill: #4e73df;
+    -fx-font-size: 17;
+    -fx-effect: dropshadow(three-pass-box, rgba(58,59,69,.15), 5, 0, 0, 0);
+}
+titled-pane > .title  > .label{
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+}
+.titled-pane:focused > .title {
+    -fx-color: white;
+    -fx-text-fill: black;
+}
+.titled-pane > .title:hover {
+    -fx-color: lightgrey;
+}
+.titled-pane > * > * > AnchorPane {
+    -fx-padding: 0px ;
+}
+
+
+.titled-pane:focused > .title {
+    -fx-color: -fx-focus-color;
+}
+
+.titled-pane:focused > .title > .text {
+    -fx-text-fill: white;
+}
+
+
+.titled-pane:focused > .title > .arrow-button .arrow {
+    -fx-background-color: rgba(255,255,255,.8);
+}
+
+.titled-pane > .title > .arrow-button > .arrow{
+    -fx-background-color: rgba(255,255,255,.8);
+}
+
+
+.titled-pane:expanded > .title > .arrow-button .arrow {
+    -fx-background-color: white;
+}
+.titled-pane:expanded {
+    -fx-text-fill: white;
+}
+.first-titled-pane:expanded {
+    -fx-text-fill: white;
+}
+#anchorImprimir{
+    -fx-background-color: linear-gradient(to bottom,#4e73df, #224abe);
+}

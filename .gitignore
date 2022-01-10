@@ -1,0 +1,6 @@
+.gradle/
+.idea/
+nb-configuration.xml
+target/
+shade/
+

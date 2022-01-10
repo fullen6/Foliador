@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="collapse" stylesheets="@../css/collapse.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" styleClass="collapse-child" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+          <Label text="Limite de numeracion" VBox.vgrow="ALWAYS">
+              <font>
+                  <Font name="System Bold" size="15.0" />
+              </font>
+              <VBox.margin>
+                  <Insets />
+              </VBox.margin>
+          </Label>
+          <VBox spacing="5.0">
+              <VBox.margin>
+                  <Insets />
+              </VBox.margin>
+              <children>
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Inicio" VBox.vgrow="ALWAYS">
+                      <font>
+                          <Font size="14.0" />
+                      </font>
+                  </Label>
+                  <Spinner fx:id="spiInicio" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" pickOnBounds="false">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Spinner>
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Fin" VBox.vgrow="ALWAYS">
+                      <VBox.margin>
+                          <Insets />
+                      </VBox.margin>
+                      <font>
+                          <Font size="14.0" />
+                      </font>
+                  </Label>
+                  <Spinner fx:id="spiFin" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Intervalo" VBox.vgrow="ALWAYS" />
+                  <Spinner fx:id="spiIntervalo" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+              </children>
+          </VBox>
+          <Label text="Fuente de impresion" VBox.vgrow="ALWAYS">
+              <VBox.margin>
+                  <Insets />
+              </VBox.margin>
+              <font>
+                  <Font name="System Bold" size="15.0" />
+              </font>
+          </Label>
+            <VBox maxWidth="1.7976931348623157E308" spacing="5.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Fuente" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboFuente" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Tamaño" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                      <font>
+                          <Font size="14.0" />
+                      </font>
+                  </Label>
+                  <Spinner fx:id="spiTamanio" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+               </children>
+            </VBox>
+            <Label layoutX="112.0" layoutY="335.0" text="Justificacion" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <RadioButton fx:id="radioJustificacionIzquierda" mnemonicParsing="false" text="Izquierda" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="justificacion" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radioJustificacionCentro" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" selected="true" text="Centro" toggleGroup="$justificacion" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="radioJustificacionDerecha" layoutX="106.0" layoutY="10.0" mnemonicParsing="false" text="Derecha" toggleGroup="$justificacion" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label layoutX="107.0" layoutY="104.0" text="Contenido en">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <VBox spacing="5.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label text="Linea 1" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <RadioButton fx:id="radioLineaUnoNumero" mnemonicParsing="false" selected="true" text="Numero">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="linea1" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="radioLineaUnoLiteral" layoutX="107.0" layoutY="10.0" mnemonicParsing="false" text="Literal" toggleGroup="$linea1">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radioLineaUnoNinguno" layoutX="155.0" layoutY="10.0" mnemonicParsing="false" text="Ninguno" toggleGroup="$linea1">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <Label layoutX="10.0" layoutY="10.0" text="Linea 2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="26.0">
+                     <children>
+                        <RadioButton fx:id="radioLineaDosNumero" mnemonicParsing="false" text="Numero">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="linea2" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="radioLineaDosLiteral" layoutX="107.0" layoutY="10.0" mnemonicParsing="false" selected="true" text="Literal" toggleGroup="$linea2">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radioLineaDosNinguno" layoutX="155.0" layoutY="10.0" mnemonicParsing="false" text="Ninguno" toggleGroup="$linea2" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+      </children>
+      </VBox>
+   </children>
+</AnchorPane>
